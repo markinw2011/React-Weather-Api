@@ -33,9 +33,9 @@ function App() {
               <small>สูงสุด{convertTemp(city.main.temp_max)}&deg;C , ต่ำสุด: {convertTemp(city.main.temp_min)}&deg;C</small>
             </div>
             <div className="info">
-              <div className="status">{city.weather[0].main}</div>
-              <div className="humidity">ความชื้น={city.main.humidity}</div>
-              <div className="wind">ความเร็วลม={city.wind.speed}</div>
+              <div className="status">สภาพอากาศ {city.weather[0].main}</div>
+              <div className="humidity">ความชื้น  {city.main.humidity}</div>
+              <div className="wind">ความเร็วลม  {city.wind.speed}</div>
             </div>
       </div>
     </section>
